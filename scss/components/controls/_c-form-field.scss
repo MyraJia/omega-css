@@ -1,7 +1,7 @@
 
 @use '../../settings/colors';
 
-input[type="text"], .c-form-field {
+.c-input {
 	$border-width: 0.125rem;
 
 	padding: 0.5rem - ($border-width) 1rem - ($border-width);
@@ -20,5 +20,33 @@ input[type="text"], .c-form-field {
 
 	&:focus {
 		border-color: colors.$secondary;
+	}
+}
+
+.c-form-field {
+	position: relative;
+	display: inline-block;
+
+	> input {
+		@extend .c-input
+	}
+
+	> span {
+		position: absolute;
+		top: -0.75rem;
+		left: 0.75rem;
+		color: var(--color-decoration);
+		background: var(--color-background);
+		padding: 0 0.25rem;
+
+		font-weight: 600;
+	}
+
+	&--wide {
+		display: block;
+
+		> input {
+			width: 100%;
+		}
 	}
 }
