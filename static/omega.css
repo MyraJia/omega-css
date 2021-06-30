@@ -334,6 +334,7 @@ template {
   --color-control: white;
   --color-border: #323C4F;
   --color-background: white;
+  --color-decoration: #0663bb;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -343,6 +344,7 @@ template {
     --color-control: #404A5E;
     --color-border: #B2B8C2;
     --color-background: #323C4F;
+    --color-decoration: #72baff;
   }
 }
 @font-face {
@@ -423,8 +425,23 @@ h6 {
   letter-spacing: -0.01em;
 }
 
-strong {
+b, strong {
   font-weight: 600;
+}
+
+ul:not([class]),
+ol:not([class]) {
+  margin: none;
+  padding-left: 2rem;
+}
+ul:not([class]) > li::marker,
+ol:not([class]) > li::marker {
+  color: var(--color-decoration);
+  font-weight: 600;
+}
+
+ul:not([class]) {
+  list-style: square;
 }
 
 .l-row {
@@ -453,10 +470,13 @@ strong {
   border: none;
   cursor: pointer;
   font-weight: 600;
-  transition: background 0.25s;
+  transition: background 0.25s, transform 0.125s;
 }
 .c-button:hover {
   background: #077be9;
+}
+.c-button:active {
+  transform: translateY(2px);
 }
 .c-button--secondary {
   background: #07746a;

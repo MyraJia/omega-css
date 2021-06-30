@@ -87,6 +87,22 @@ h6 {
 	letter-spacing: -0.01em;
 }
 
-strong {
+b, strong {
 	font-weight: 600;
+}
+
+ul:not([class]),
+ol:not([class]) {
+	margin: none;
+	padding-left: 2rem;
+
+
+	> li::marker {
+		color: var(--color-decoration);
+		font-weight: 600;
+	}
+}
+
+ul:not([class]) {
+	list-style: square;
 }

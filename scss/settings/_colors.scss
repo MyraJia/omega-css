@@ -1,6 +1,9 @@
 
 $primary: #0663bb !default;
+$primary-light: #72baff !default;
+
 $secondary: #07746a !default;
+$secondary-light: #49d1c4 !default;
 
 $black: black;
 $white: white;
@@ -25,6 +28,7 @@ $gray-100: #141B28;
 	--color-control: #{ $white };
 	--color-border: #{ $gray-80 };
 	--color-background: #{ $white };
+	--color-decoration: #{ $primary };
 }
 
 @media( prefers-color-scheme: dark ) {
@@ -34,5 +38,6 @@ $gray-100: #141B28;
 		--color-control: #{ $gray-70 };
 		--color-border: #{ $gray-20 };
 		--color-background: #{ $gray-80 };
+		--color-decoration: #{ $primary-light };
 	}
 }
