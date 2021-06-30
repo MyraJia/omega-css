@@ -1,0 +1,92 @@
+
+@use './colors';
+
+$font-path: 'fonts' !default;
+
+@font-face {
+    font-family: 'work-sans';
+    src: url('#{$font-path}/WorkSans-Italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'work-sans';
+    src: url('#{$font-path}/WorkSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'work-sans';
+    src: url('#{$font-path}/WorkSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'work-sans';
+    src: url('#{$font-path}/WorkSans-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: block;
+}
+
+html, body {
+	font: 16px/24px 'work-sans', sans-serif;
+	color: var(--color-text);
+}
+
+h1,h2,h3,h4,h5,h6 {
+	margin: 0;
+	padding: 0;
+	color: var(--color-heading);
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 4rem;
+}
+
+h2 {
+	font-weight: 700;
+	font-size: 2.25rem;
+	line-height: 3rem;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+
+h4 {
+	font-weight: 700;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+}
+
+h5 {
+	font-weight: 600;
+	font-size: 1.125rem;
+	line-height: 1.5rem;
+
+	font-variant: small-caps;
+}
+
+h6 {
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.5rem;
+
+	font-variant: small-caps;
+	letter-spacing: -0.01em;
+}
+
+strong {
+	font-weight: 600;
+}

@@ -1,0 +1,38 @@
+
+$primary: #0663bb !default;
+$secondary: #07746a !default;
+
+$black: black;
+$white: white;
+
+$gray-base: #626B7C;
+
+$gray-0: #E8ECF2;
+$gray-10: #CCD1DB;
+$gray-20: #B2B8C2;
+$gray-30: #9CA1AC;
+$gray-40: #7C8699;
+$gray-50: $gray-base;
+$gray-60: #525C6F;
+$gray-70: #404A5E;
+$gray-80: #323C4F;
+$gray-90: #252E40;
+$gray-100: #141B28;
+
+:root {
+	--color-text: #{ $gray-50 };
+	--color-heading: #{ $gray-70 };
+	--color-control: #{ $white };
+	--color-border: #{ $gray-80 };
+	--color-background: #{ $white };
+}
+
+@media( prefers-color-scheme: dark ) {
+	:root {
+		--color-text: #{ $white };
+		--color-heading: #{ $white };
+		--color-control: #{ $gray-70 };
+		--color-border: #{ $gray-20 };
+		--color-background: #{ $gray-80 };
+	}
+}

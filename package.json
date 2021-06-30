@@ -1,0 +1,16 @@
+{
+  "name": "omega-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:scss": "sass scss/omega.scss static/omega.css",
+    "watch:scss": "sass -w scss/omega.scss static/omega.css"
+  },
+  "author": "Myra Guerrier <myra.jia.guerrier@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.35.1"
+  }
+}

@@ -1,0 +1,24 @@
+
+@use '../../settings/colors';
+
+input[type="text"], .c-form-field {
+	$border-width: 0.125rem;
+
+	padding: 0.5rem - ($border-width) 1rem - ($border-width);
+
+	background: var(--color-control);
+	border: $border-width solid var(--color-border);
+	color: inherit;
+
+	border-radius: 0;
+
+	&::placeholder {
+		opacity: 0.5;
+		font-style: italic;
+		color: inherit;
+	}
+
+	&:focus {
+		border-color: colors.$secondary;
+	}
+}
