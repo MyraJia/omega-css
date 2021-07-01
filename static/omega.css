@@ -331,7 +331,6 @@ template {
 :root {
   --color-text: #626B7C;
   --color-heading: #404A5E;
-  --color-control: white;
   --color-border: #323C4F;
   --color-background: white;
   --color-decoration: #0663bb;
@@ -343,7 +342,6 @@ template {
   :root {
     --color-text: white;
     --color-heading: white;
-    --color-control: #323C4F;
     --color-border: #B2B8C2;
     --color-background: #323C4F;
     --color-decoration: #72baff;
@@ -465,6 +463,17 @@ ul:not([class]) {
   margin-top: 1rem;
 }
 
+.c-block {
+  padding: 1.5rem;
+  --color-background: #E8ECF2;
+  background: var(--color-background);
+}
+@media (prefers-color-scheme: dark) {
+  .c-block {
+    --color-background: #404A5E;
+  }
+}
+
 .c-button {
   padding: 0.5rem 1rem;
   background: #0663bb;
@@ -489,7 +498,7 @@ ul:not([class]) {
 
 .c-input, .c-form-field > input {
   padding: 0.375rem 0.875rem;
-  background: var(--color-control);
+  background: var(--color-background);
   border: 0.125rem solid var(--color-border);
   color: inherit;
   border-radius: 0;

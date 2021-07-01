@@ -1,0 +1,15 @@
+
+@use '../../settings/colors';
+@use '../../mixins/media';
+
+.c-block {
+	padding: 1.5rem;
+
+	--color-background: #{ colors.$gray-0 };
+
+	background: var(--color-background);
+
+	@include media.dark-mode {
+		--color-background: #{ colors.$gray-70 };
+	}
+}
