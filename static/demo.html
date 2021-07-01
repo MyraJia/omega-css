@@ -4,58 +4,65 @@
 
 <link rel="stylesheet" href="omega.css">
 
-<main class="l-stack l-row">
-	<h1>OmegaCSS</h1>
+<main class="l-stack--lg l-row">
+	<h1 class="u-center">OmegaCSS</h1>
 
-	<h2>Demo text content</h2>
+	<hr class="c-divider">
 
-	<p>This is some body text, in order to demonstrate the chosen font family in context. Text continues here, spanning multiple lines, so that spacing between content sections can easily be tested.</p>
-	<p>This is some body text, in order to demonstrate the chosen font family in context. Text continues here, spanning multiple lines, so that spacing between content sections can easily be tested.</p>
+	<section class="l-stack">
+		<h2>Demo text content</h2>
 
-	<ul>
-		<li>A list, with some text content</li>
-		<li>More text</li>
-	</ul>
-
-	<p>An ordered list</p>
-
-	<ol>
-		<li>A list, with some text content</li>
-		<li>More text</li>
-	</ol>
-
-
-	<h2>Controls</h2>
-
-	<button type="button" class="c-button">This is a button</button>
-	<button type="button" class="c-button c-button--secondary">This is another button</button>
-
-	<label class="c-form-field">
-		<span>Your Name</span>
-		<input type="text" placeholder="A demo form field">
-	</label>
-
-	<h2>Blocks</h2>
-
-	<section class="c-block l-stack">
-		<h3>Some content in a block</h3>
-
+		<p>This is some body text, <a>in order to demonstrate</a> the chosen font family in context. Text continues here, <a>spanning multiple lines</a>, so that spacing between content sections can easily be tested.</p>
 		<p>This is some body text, in order to demonstrate the chosen font family in context. Text continues here, spanning multiple lines, so that spacing between content sections can easily be tested.</p>
 
-		<form class="l-stack">
-			<h4>An inline form</h4>
+		<ul>
+			<li>A list, with some text content</li>
+			<li>More text</li>
+		</ul>
 
-			<label class="c-form-field c-form-field--wide">
-				<span>Your Name</span>
-				<input type="text">
-			</label>
+		<p>An ordered list</p>
 
-			<label class="c-form-field c-form-field--wide">
-				<span>Your Password</span>
-				<input type="text">
-			</label>
+		<ol>
+			<li>A list, with some text content</li>
+			<li>More text</li>
+		</ol>
+	</section>
 
-			<button class="c-button" type="button">Submit</button>
-		</form>
+	<section class="l-stack">
+		<h2>Controls</h2>
+
+		<button type="button" class="c-button">This is a button</button>
+		<button type="button" class="c-button c-button--secondary">This is another button</button>
+
+		<label class="c-form-field">
+			<span>Your Name</span>
+			<input type="text" placeholder="A demo form field">
+		</label>
+	</section>
+
+	<section class="l-stack">
+		<h2>Blocks</h2>
+
+		<aside class="c-block l-stack">
+			<h3>Some content in a block</h3>
+
+			<p>This is some body text, in order to demonstrate the chosen font family in context. Text continues here, spanning multiple lines, so that spacing between content sections can easily be tested.</p>
+
+			<form class="l-stack">
+				<h4>An inline form</h4>
+
+				<label class="c-form-field c-form-field--wide">
+					<span>Your Name</span>
+					<input type="text">
+				</label>
+
+				<label class="c-form-field c-form-field--wide">
+					<span>Your Password</span>
+					<input type="text">
+				</label>
+
+				<button class="c-button" type="button">Submit</button>
+			</form>
+		</aside>
 	</section>
 </main>

@@ -13,7 +13,7 @@
 
 	font-weight: 600;
 
-	transition: background 0.25s, transform 0.125s;
+	transition: transform 0.125s;
 
 	&:hover {
 		background: color.scale( colors.$primary, $lightness: 15% );

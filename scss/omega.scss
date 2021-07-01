@@ -14,10 +14,14 @@
 
 // Blocks
 @use './components/blocks/c-block';
+@use './components/blocks/c-divider';
 
 // Controls
 @use './components/controls/c-button';
 @use './components/controls/c-form-field';
+
+// Utility
+@use './components/utility/u-align';
 
 
 html {

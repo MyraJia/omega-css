@@ -3,4 +3,16 @@
 	> * + * {
 		margin-top: 1rem;
 	}
+
+	&--lg {
+		> * + * {
+			margin-top: 2rem;
+		}
+	}
+
+	&--sm {
+		> * + * {
+			margin-top: 0.5rem;
+		}
+	}
 }

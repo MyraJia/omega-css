@@ -344,7 +344,7 @@ template {
     --color-heading: white;
     --color-border: #B2B8C2;
     --color-background: #323C4F;
-    --color-decoration: #72baff;
+    --color-decoration: #8ec8ff;
   }
 }
 @font-face {
@@ -429,6 +429,12 @@ b, strong {
   font-weight: 600;
 }
 
+a {
+  text-decoration: underline;
+  color: var(--color-decoration);
+  cursor: pointer;
+}
+
 ul:not([class]),
 ol:not([class]) {
   margin: none;
@@ -462,6 +468,12 @@ ul:not([class]) {
 .l-stack > * + * {
   margin-top: 1rem;
 }
+.l-stack--lg > * + * {
+  margin-top: 2rem;
+}
+.l-stack--sm > * + * {
+  margin-top: 0.5rem;
+}
 
 .c-block {
   padding: 1.5rem;
@@ -474,6 +486,15 @@ ul:not([class]) {
   }
 }
 
+.c-divider {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-top: 0.25rem solid var(--color-decoration);
+}
+
 .c-button {
   padding: 0.5rem 1rem;
   background: #0663bb;
@@ -481,7 +502,7 @@ ul:not([class]) {
   border: none;
   cursor: pointer;
   font-weight: 600;
-  transition: background 0.25s, transform 0.125s;
+  transition: transform 0.125s;
 }
 .c-button:hover {
   background: #077be9;
@@ -530,6 +551,22 @@ ul:not([class]) {
 }
 .c-form-field--wide > input {
   width: 100%;
+}
+
+.u-left {
+  text-align: left;
+}
+
+.u-right {
+  text-align: right;
+}
+
+.u-center {
+  text-align: center;
+}
+
+.u-justify {
+  text-align: justify;
 }
 
 html {
