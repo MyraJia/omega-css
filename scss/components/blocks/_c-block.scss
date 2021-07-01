@@ -3,13 +3,25 @@
 @use '../../mixins/media';
 
 .c-block {
-	padding: 1.5rem;
+	padding: 1rem;
 
 	--color-background: #{ colors.$gray-0 };
 
 	background: var(--color-background);
+	color: var(--color-text);
 
 	@include media.dark-mode {
 		--color-background: #{ colors.$gray-70 };
 	}
+
+	&--success {
+		--color-background: #{ colors.$success-light };
+		--color-text: #{ colors.$black };
+	}
+
+	&--danger {
+		--color-background: #{ colors.$danger-light };
+		--color-text: #{ colors.$black };
+	}
+
 }

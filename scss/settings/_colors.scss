@@ -2,8 +2,8 @@
 $primary: #0663bb !default;
 $primary-light: #8ec8ff !default;
 
-$secondary: #07746a !default;
-$secondary-light: #49d1c4 !default;
+$secondary: #076d74 !default;
+$secondary-light: #49bdd1 !default;
 
 $black:    black !default;
 $white:    white !default;
@@ -20,8 +20,10 @@ $gray-80:  #323C4F !default;
 $gray-90:  #252E40 !default;
 $gray-100: #141B28 !default;
 
-$success: rgb(20, 107, 59);
-$danger: rgb(124, 41, 20);
+$success: rgb(18, 131, 65);
+$success-light: rgb(109, 216, 157);
+$danger: rgb(124, 23, 20);
+$danger-light: rgb(240, 140, 133);
 
 :root {
 	--color-text: #{ $gray-50 };
@@ -41,5 +43,8 @@ $danger: rgb(124, 41, 20);
 		--color-border: #{ $gray-20 };
 		--color-background: #{ $gray-80 };
 		--color-decoration: #{ $primary-light };
+
+		--color-success: #{ $success-light };
+		--color-danger: #{ $danger-light };
 	}
 }

@@ -334,8 +334,8 @@ template {
   --color-border: #323C4F;
   --color-background: white;
   --color-decoration: #0663bb;
-  --color-success: #146b3b;
-  --color-danger: #7c2914;
+  --color-success: #128341;
+  --color-danger: #7c1714;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -345,6 +345,8 @@ template {
     --color-border: #B2B8C2;
     --color-background: #323C4F;
     --color-decoration: #8ec8ff;
+    --color-success: #6dd89d;
+    --color-danger: #f08c85;
   }
 }
 @font-face {
@@ -476,14 +478,23 @@ ul:not([class]) {
 }
 
 .c-block {
-  padding: 1.5rem;
+  padding: 1rem;
   --color-background: #E8ECF2;
   background: var(--color-background);
+  color: var(--color-text);
 }
 @media (prefers-color-scheme: dark) {
   .c-block {
     --color-background: #404A5E;
   }
+}
+.c-block--success {
+  --color-background: #6dd89d;
+  --color-text: black;
+}
+.c-block--danger {
+  --color-background: #f08c85;
+  --color-text: black;
 }
 
 .c-divider {
@@ -511,10 +522,22 @@ ul:not([class]) {
   transform: translateY(2px);
 }
 .c-button--secondary {
-  background: #07746a;
+  background: #076d74;
 }
 .c-button--secondary:hover {
-  background: #0aab9c;
+  background: #0aa0ab;
+}
+.c-button--success {
+  background: #128341;
+}
+.c-button--success:hover {
+  background: #19b359;
+}
+.c-button--danger {
+  background: #7c1714;
+}
+.c-button--danger:hover {
+  background: #ab201c;
 }
 
 .c-input, .c-form-field > input {
@@ -530,7 +553,7 @@ ul:not([class]) {
   color: inherit;
 }
 .c-input:focus, .c-form-field > input:focus {
-  border-color: #07746a;
+  border-color: #076d74;
 }
 
 .c-form-field {

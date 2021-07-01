@@ -30,4 +30,20 @@
 			background: color.scale( colors.$secondary, $lightness: 15% );
 		}
 	}
+
+	&--success {
+		background: colors.$success;
+
+		&:hover {
+			background: color.scale( colors.$success, $lightness: 15% );
+		}
+	}
+
+	&--danger {
+		background: colors.$danger;
+
+		&:hover {
+			background: color.scale( colors.$danger, $lightness: 15% );
+		}
+	}
 }
