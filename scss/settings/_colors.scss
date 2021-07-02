@@ -1,8 +1,10 @@
 
-$primary: #0663bb !default;
+@use '../../node_modules/hsluv-sass/src/hsluv' as hsluv;
+
+/*$primary: #0663bb !default;
 $primary-light: #8ec8ff !default;
 
-$secondary: #076d74 !default;
+$secondary: #5958b5 !default;
 $secondary-light: #49bdd1 !default;
 
 $black:    black !default;
@@ -20,10 +22,42 @@ $gray-80:  #323C4F !default;
 $gray-90:  #252E40 !default;
 $gray-100: #141B28 !default;
 
-$success: rgb(18, 131, 65);
-$success-light: rgb(109, 216, 157);
-$danger: rgb(124, 23, 20);
-$danger-light: rgb(240, 140, 133);
+$success:  #006f5b !default;
+$success-light: #73d3ba !default;
+$danger:   #aa373c !default;
+$danger-light: #ffaaac !default;*/
+
+$base-saturation: 100%;
+$base-luminance: 45%;
+$lighter-luminance: 80%;
+
+$primary:         hsluv.hsluv(255, $base-saturation, $base-luminance) !default;
+$primary-light:   hsluv.hsluv(255, $base-saturation, $lighter-luminance) !default;
+
+$secondary:       hsluv.hsluv(270, $base-saturation, $base-luminance) !default;
+$secondary-light: hsluv.hsluv(270, $base-saturation, $lighter-luminance) !default;
+
+$success:         hsluv.hsluv(169, $base-saturation, $base-luminance) !default;
+$success-light:   hsluv.hsluv(169, $base-saturation, $lighter-luminance) !default;
+
+$danger:          hsluv.hsluv(357, $base-saturation, $base-luminance) !default;
+$danger-light:    hsluv.hsluv(357, $base-saturation, $lighter-luminance) !default;
+
+
+$black:    black !default;
+$white:    white !default;
+
+$gray-0:   #E8ECF2 !default;
+$gray-10:  #CCD1DB !default;
+$gray-20:  #B2B8C2 !default;
+$gray-30:  #9CA1AC !default;
+$gray-40:  #7C8699 !default;
+$gray-50:  #626B7C !default;
+$gray-60:  #525C6F !default;
+$gray-70:  #404A5E !default;
+$gray-80:  #323C4F !default;
+$gray-90:  #252E40 !default;
+$gray-100: #141B28 !default;
 
 :root {
 	--color-text: #{ $gray-50 };
