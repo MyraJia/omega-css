@@ -6,12 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:scss": "sass scss/omega.scss static/omega.css",
-    "watch:scss": "sass -w scss/omega.scss static/omega.css"
+    "watch:scss": "sass -w scss/omega.scss static/omega.css",
+    "host": "ws --https --http2 --directory static"
   },
   "author": "Myra Guerrier <myra.jia.guerrier@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "hsluv-sass": "github:hsluv/hsluv-sass#0048e8e835a71c90c95b04da95c2d7f5d95185b4",
+    "local-web-server": "^4.2.1",
     "sass": "^1.35.1"
   }
 }
