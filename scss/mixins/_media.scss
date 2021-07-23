@@ -1,6 +1,10 @@
 
 @mixin dark-mode {
-	@media( prefers-color-scheme: dark ) {
+	/*@media( prefers-color-scheme: dark ) {
 		@content;
-	}	
+	}*/
+
+	@at-root html[dark] &, &[dark] {
+		@content;
+	}
 }
