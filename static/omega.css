@@ -371,28 +371,28 @@ html[dark] :root, :root[dark] {
 
 @font-face {
   font-family: "work-sans";
-  src: url("fonts/WorkSans-Italic.woff2") format("woff2");
+  src: url("/fonts/WorkSans-Italic.woff2") format("woff2");
   font-weight: 400;
   font-style: italic;
   font-display: block;
 }
 @font-face {
   font-family: "work-sans";
-  src: url("fonts/WorkSans-Regular.woff2") format("woff2");
+  src: url("/fonts/WorkSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: block;
 }
 @font-face {
   font-family: "work-sans";
-  src: url("fonts/WorkSans-Bold.woff2") format("woff2");
+  src: url("/fonts/WorkSans-Bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: block;
 }
 @font-face {
   font-family: "work-sans";
-  src: url("fonts/WorkSans-SemiBold.woff2") format("woff2");
+  src: url("/fonts/WorkSans-SemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: block;
