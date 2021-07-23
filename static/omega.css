@@ -334,8 +334,27 @@ template {
   --color-border: #323C4F;
   --color-background: white;
   --color-decoration: #005be7;
+  --color-primary: #005be7;
+  --color-primary-light: #c0c9ff;
+  --color-secondary: #683aff;
+  --color-secondary-light: #ccc6ff;
   --color-success: #00745a;
+  --color-success-light: #00e7b6;
   --color-danger: #c80063;
+  --color-danger-light: #ffb9cb;
+  --color-gray-0: #E8ECF2;
+  --color-gray-10: #CCD1DB;
+  --color-gray-20: #B2B8C2;
+  --color-gray-30: #9CA1AC;
+  --color-gray-40: #7C8699;
+  --color-gray-50: #626B7C;
+  --color-gray-60: #525C6F;
+  --color-gray-70: #404A5E;
+  --color-gray-80: #323C4F;
+  --color-gray-90: #252E40;
+  --color-gray-100: #141B28;
+  --color-black: black;
+  --color-white: white;
 }
 @media (prefers-color-scheme: dark) {
   :root {

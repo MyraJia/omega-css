@@ -57,8 +57,31 @@ $gray-100: #141B28 !default;
 	--color-background: #{ $white };
 	--color-decoration: #{ $primary };
 
+	--color-primary: #{ $primary };
+	--color-primary-light: #{ $primary-light };
+	--color-secondary: #{ $secondary };
+	--color-secondary-light: #{ $secondary-light };
+
 	--color-success: #{ $success };
+	--color-success-light: #{ $success-light };
+
 	--color-danger: #{ $danger };
+	--color-danger-light: #{ $danger-light };
+
+	--color-gray-0: #{ $gray-0 };
+	--color-gray-10: #{ $gray-10 };
+	--color-gray-20: #{ $gray-20 };
+	--color-gray-30: #{ $gray-30 };
+	--color-gray-40: #{ $gray-40 };
+	--color-gray-50: #{ $gray-50 };
+	--color-gray-60: #{ $gray-60 };
+	--color-gray-70: #{ $gray-70 };
+	--color-gray-80: #{ $gray-80 };
+	--color-gray-90: #{ $gray-90 };
+	--color-gray-100: #{ $gray-100 };
+
+	--color-black: #{ $black };
+	--color-white: #{ $white };
 
 	// Dark-mode variant theme
 	@include media.dark-mode {
