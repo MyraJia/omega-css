@@ -1,5 +1,5 @@
 
-@use '../../node_modules/hsluv-sass/src/hsluv' as hsluv;
+//@use '../../node_modules/hsluv-sass/src/hsluv' as hsluv;
 @use '../mixins/media';
 
 
@@ -18,7 +18,7 @@ $danger-hue:      355 !default;
 
 // Color generation. These can also be overridden, to precisely specify base colors
 
-$primary:         hsluv.hsluv($primary-hue, $base-saturation, $base-luminance) !default;
+/*$primary:         hsluv.hsluv($primary-hue, $base-saturation, $base-luminance) !default;
 $primary-light:   hsluv.hsluv($primary-hue, $base-saturation, $lighter-luminance) !default;
 
 $secondary:       hsluv.hsluv($secondary-hue, $base-saturation, $base-luminance) !default;
@@ -28,7 +28,19 @@ $success:         hsluv.hsluv($success-hue, $base-saturation, $base-luminance) !
 $success-light:   hsluv.hsluv($success-hue, $base-saturation, $lighter-luminance) !default;
 
 $danger:          hsluv.hsluv($danger-hue, $base-saturation, $base-luminance) !default;
-$danger-light:    hsluv.hsluv($danger-hue, $base-saturation, $lighter-luminance) !default;
+$danger-light:    hsluv.hsluv($danger-hue, $base-saturation, $lighter-luminance) !default;*/
+
+$primary:         #005be7 !default;
+$primary-light:   #c0c9ff !default;
+
+$secondary:       #683aff !default;
+$secondary-light: #ccc6ff !default;
+
+$success:         #00745a !default;
+$success-light:   #00e7b6 !default;
+
+$danger:          #c80063 !default;
+$danger-light:    #ffb9cb !default;
 
 // Grays. These are hand-picked, as algorithmic approaches didn't give satisfactory results
 
