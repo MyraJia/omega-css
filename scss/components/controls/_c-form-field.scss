@@ -1,9 +1,9 @@
 
 @use '../../settings/colors';
 
-.c-input {
-	$border-width: 0.125rem;
+$border-width: 0.125rem;
 
+.c-input {
 	padding: 0.5rem - ($border-width) 1rem - ($border-width);
 
 	background: var(--color-background);
@@ -19,7 +19,54 @@
 	}
 
 	&:focus {
-		border-color: colors.$secondary;
+		outline: none;
+		border-color: var(--color-primary);
+	}
+}
+
+.c-checkbox {
+	position: relative;
+	display: inline-block;
+	line-height: 1.5rem;
+	padding: 0.5rem;
+	left: 0.25rem;
+
+	& + span {
+		padding-left: 1.5rem;
+
+		color: var(--color-decoration);
+		font-weight: 600;
+
+		cursor: pointer;
+	}
+
+	& + span::before,
+	& + span::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+
+		width: 1.5rem;
+		height: 1.5rem;
+	}
+
+	& + span::before {
+		border: $border-width solid var(--color-border);
+		border-radius: $border-width;
+		background: var(--color-white);
+	}
+
+	&:checked + span::after {
+		width: 0.75rem;
+		height: 0.75rem;
+		margin: 0.75rem * 0.5;
+
+		background: var(--color-primary);
+	}
+
+	&:focus + span::before {
+		border-color: var(--color-primary);
 	}
 }
 
@@ -27,11 +74,11 @@
 	position: relative;
 	display: inline-block;
 
-	> input {
+	> input:not([type="checkbox"]) {
 		@extend .c-input
 	}
 
-	> span {
+	&__label {
 		position: absolute;
 		top: -0.75rem;
 		left: 0.75rem;
@@ -42,11 +89,20 @@
 		font-weight: 600;
 	}
 
+	&__error {
+		font-style: italic;
+		color: var(--color-danger);
+	}
+
 	&--wide {
 		display: block;
 
-		> input {
+		> input:not([type="checkbox"]) {
 			width: 100%;
 		}
+	}
+
+	&--invalid {
+		--color-border: var(--color-danger);
 	}
 }

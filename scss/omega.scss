@@ -1,10 +1,18 @@
 
+$use-default-font: true !default;
+$font-name: 'work-sans' !default;
+$font-path: '/fonts' !default;
+
 // Vendor CSS
 @use './vendor/normalize';
 
 // Root-level config
 @use './settings/colors';
-@use './settings/typography';
+@use './settings/typography' with (
+	$use-default-font: $use-default-font,
+	$font-name: $font-name,
+	$font-path: $font-path
+);
 
 // Layout components
 @use './components/layout/l-row';
