@@ -16,3 +16,22 @@
 		}
 	}
 }
+
+
+.l-stack-horizontal {
+	> * + * {
+		margin-left: 1rem;
+	}
+
+	&--lg {
+		> * + * {
+			margin-left: 2rem;
+		}
+	}
+
+	&--sm {
+		> * + * {
+			margin-left: 0.5rem;
+		}
+	}
+}
