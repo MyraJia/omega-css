@@ -24,12 +24,76 @@ $border-width: 0.125rem;
 	}
 }
 
+
+.c-input-range {
+	-webkit-appearance: none;
+	appearance: none;
+	background: transparent;
+	cursor: pointer;
+	width: 100%;
+
+	&:focus {
+		outline: none;
+	}
+
+	// Chrome, Safari, Opera and Edge Chromium styles
+
+	// slider track
+	&::-webkit-slider-runnable-track {
+		background-color: var(--color-decoration);
+		border-radius: 0.5rem;
+		height: 0.5rem;
+	}
+
+	// slider thumb
+	&::-webkit-slider-thumb {
+		-webkit-appearance: none; /* Override default look */
+		appearance: none;
+		margin-top: -8px; /* Centers thumb on the track */
+		background-color: var(--color-primary);
+		border-radius: 0.25rem;
+		height: 1.5rem;
+		width: 1rem;
+	}
+
+	&:focus::-webkit-slider-thumb {
+		outline: 2px solid var(--color-white);
+		outline-offset: 0.125rem;
+	}
+
+	// Firefox styles
+
+	// slider track
+	&::-moz-range-track {
+		background-color: var(--color-decoration);
+		border-radius: 0.5rem;
+		height: 0.5rem;
+	}
+
+	&::-moz-range-thumb {
+		background-color: var(--color-primary);
+		border: none; /*Removes extra border that FF applies*/
+		border-radius: 0.25rem;
+		height: 1.5rem;
+		width: 1rem;
+	}
+
+	&:focus::-moz-range-thumb{
+		outline: 2px solid var(--color-white);
+		outline-offset: 0.125rem;
+	}
+}
+
 .c-checkbox {
 	position: relative;
 	display: inline-block;
 	line-height: 1.5rem;
 	padding: 0.5rem;
 	left: 0.25rem;
+
+	&--radio { 
+		text-align: left;
+	}
 
 	& + span {
 		padding-left: 1.5rem;
@@ -68,6 +132,14 @@ $border-width: 0.125rem;
 	&:focus + span::before {
 		border-color: var(--color-primary);
 	}
+
+	&--radio + span::before {
+		border-radius: 100%;
+	}
+
+	&--radio:checked + span::after {
+		border-radius: 100%;
+	}
 }
 
 .c-form-field {
@@ -97,7 +169,7 @@ $border-width: 0.125rem;
 	&--wide {
 		display: block;
 
-		> input:not([type="checkbox"]) {
+		> input:not([type="checkbox"]):not([type="radio"]) {
 			width: 100%;
 		}
 	}

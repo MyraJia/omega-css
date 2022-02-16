@@ -9,4 +9,16 @@
 	&--space-between {
 		justify-content: space-between;
 	}
+
+	@for $i from 1 to 12 {
+		&--gap-#{$i} {
+			gap: #{$i}rem;
+		}
+	}
+
+	&__item {
+		&--grow {
+			flex-grow: 1;
+		}
+	}
 }
