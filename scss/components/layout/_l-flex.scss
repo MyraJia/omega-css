@@ -1,4 +1,7 @@
 
+@use 'sass:map';
+@use '../../mixins/responsive';
+
 .l-flex {
 	display: flex;
 
@@ -13,6 +16,14 @@
 	@for $i from 1 to 12 {
 		&--gap-#{$i} {
 			gap: #{$i}rem;
+		}
+	}
+
+	@each $breakpoint, $_ in responsive.$breakpoints {
+		&--break-when-#{$breakpoint} {
+			@include responsive.when($breakpoint) {
+				display: block;
+			}
 		}
 	}
 
