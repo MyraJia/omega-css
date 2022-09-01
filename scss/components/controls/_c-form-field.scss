@@ -4,6 +4,8 @@
 $border-width: 0.125rem;
 
 .c-input {
+	display: block;
+
 	padding: 0.5rem - ($border-width) 1rem - ($border-width);
 
 	background: var(--color-background);
@@ -146,8 +148,14 @@ $border-width: 0.125rem;
 	position: relative;
 	display: inline-block;
 
-	> input:not([type="checkbox"]) {
+	> input:not([type="checkbox"]),
+	> textarea {
 		@extend .c-input
+	}
+
+	> textarea {
+		width: 100%;
+		resize: vertical;
 	}
 
 	&__label {
